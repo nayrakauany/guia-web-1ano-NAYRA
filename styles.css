@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.welcome-section {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 0 auto 3rem;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    animation: slideIn 0.8s ease-out;
+}
+
+.welcome-section h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+}
+
+.welcome-section p {
+    color: #34495e;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 3rem;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.tech-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.tech-info {
+    flex: 1;
+}
+
+h3 {
+    color: #34495e;
+    margin: 1rem 0;
+    font-size: 1.3rem;
+}
+
+ul {
+    list-style-position: inside;
+    margin: 1rem 0;
+}
+
+li {
+    margin: 0.5rem 0;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #2c3e50;
+    color: white;
+    margin-top: 3rem;
+}
+
+/* Cores específicas para cada seção */
+#html-section {
+    border-left: 5px solid #e34c26;
+}
+
+#css-section {
+    border-left: 5px solid #264de4;
+}
+
+#js-section {
+    border-left: 5px solid #f0db4f;
+}
+
+#best-practices {
+    border-left: 5px solid #27ae60;
+}
+
+#tech-panorama {
+    border-left: 5px solid #8e44ad;
+}
+
+#project-flow {
+    border-left: 5px solid #e67e22;
+}
+
+/* Estilos para artigos */
+article {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+/* Estilos para o fluxograma do projeto */
+.project-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.step {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+}
+
+.step h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #e67e22;
+    padding-bottom: 0.5rem;
+}
+
+.choose-tech {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #8e44ad;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .tech-container {
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    .project-steps {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Animações */
+.step, article {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
