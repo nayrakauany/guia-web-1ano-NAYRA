@@ -4,17 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guia Web: HTML, CSS e JavaScript</title>
+    <meta name="description" content="Guia introdutório sobre HTML, CSS e JavaScript — boas práticas e panorama de tecnologias web.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Tecnologias Web Fundamentais</h1>
-        <p>Aprenda sobre as três principais tecnologias que formam a base do desenvolvimento web moderno</p>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <h1>Tecnologias Web Fundamentais</h1>
+                <p class="tag">Aprenda sobre as principais tecnologias que formam a base do desenvolvimento web</p>
+            </div>
+
+            <nav class="main-nav" aria-label="Principal">
+                <ul>
+                    <li><a href="#html-section">HTML</a></li>
+                    <li><a href="#css-section">CSS</a></li>
+                    <li><a href="#js-section">JavaScript</a></li>
+                    <li><a href="#best-practices">Boas Práticas</a></li>
+                    <li><a href="#tech-panorama">Panorama</a></li>
+                </ul>
+            </nav>
+
+            <button id="themeToggle" class="theme-toggle" aria-label="Alternar tema">🌞</button>
+        </div>
     </header>
 
     <div class="welcome-section">
-        <h2>👋 Bem-vindo(a) ao Guia Web!</h2>
+        <h2 class="greeting"><span class="wave">👋</span> <span class="word1">Seja</span> <span class="word2">bem‑vindo(a)</span><span class="small"> ao Guia Web!</span></h2>
         <p>Que ótimo ter você aqui! Este guia foi criado especialmente para ajudar você a entender o fascinante mundo do desenvolvimento web. Seja você um iniciante curioso ou alguém buscando aprofundar seus conhecimentos, você encontrará informações valiosas para sua jornada de aprendizado.</p>
+        <div class="subtitle">
+            <span id="typed"></span>
+            <span class="cursor">|</span>
+        </div>
         <p>Vamos explorar juntos os fundamentos, boas práticas e o panorama atual do desenvolvimento web. Prepare-se para uma jornada incrível!</p>
     </div>
 
@@ -272,6 +294,8 @@
     <footer>
         <p>Desenvolvido para auxiliar no aprendizado de desenvolvimento web</p>
     </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">↑</button>
 
     <script src="script.js"></script>
 </body>
